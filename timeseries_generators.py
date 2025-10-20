@@ -49,4 +49,60 @@ def lorenz63(
     return trajectory[transient:]
 
 
-__all__ = ["lorenz63"]
+def logistic_map(
+    *,
+    r: float = 3.9,
+    x0: float = 0.5,
+    steps: int = 5000,
+    transient: int = 0,
+) -> np.ndarray:
+    """Genera la successione della mappa logistica x_{n+1} = r x_n (1 - x_n)."""
+
+    if steps <= 0:
+        raise ValueError("'steps' deve essere positivo")
+    if not 0 < x0 < 1:
+        raise ValueError("'x0' deve appartenere all'intervallo (0, 1)")
+    if transient < 0:
+        raise ValueError("'transient' non può essere negativo")
+
+    total_steps = steps + transient
+    values = np.empty(total_steps, dtype=float)
+    values[0] = x0
+
+    for i in range(1, total_steps):
+        values[i] = r * values[i - 1] * (1.0 - values[i - 1])
+
+    return values[transient:]
+
+
+def henon_map(
+    *,
+    a: float = 1.4,
+    b: float = 0.3,
+    x0: float = 0.1,
+    y0: float = 0.3,
+    steps: int = 5000,
+    transient: int = 0,
+) -> np.ndarray:
+    """Genera la traiettoria della mappa di Hénon."""
+
+    if steps <= 0:
+        raise ValueError("'steps' deve essere positivo")
+    if transient < 0:
+        raise ValueError("'transient' non può essere negativo")
+
+    total_steps = steps + transient
+    x = np.empty(total_steps, dtype=float)
+    y = np.empty(total_steps, dtype=float)
+    x[0], y[0] = x0, y0
+
+    for i in range(1, total_steps):
+        x_prev = x[i - 1]
+        y_prev = y[i - 1]
+        x[i] = 1.0 - a * x_prev**2 + y_prev
+        y[i] = b * x_prev
+
+    return np.column_stack((x[transient:], y[transient:]))
+
+
+__all__ = ["lorenz63", "logistic_map", "henon_map"]
