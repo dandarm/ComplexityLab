@@ -1,7 +1,8 @@
-# region Lyapunov
 import numpy as np
 from scipy.spatial import cKDTree
 
+
+# region Lyapunov
 
 def time_delay_embedding(series, emb_dim, delay):
     series = np.asarray(series, dtype=float)
@@ -11,7 +12,6 @@ def time_delay_embedding(series, emb_dim, delay):
     return np.array([
         series[i : i + emb_dim * delay : delay] for i in range(n_vectors)
     ])
-
 
 def largest_lyapunov_rosenstein(series, dt, emb_dim=6, delay=8, theiler=50, fit_range=(5, 25)):
     embedded = time_delay_embedding(series, emb_dim, delay)
