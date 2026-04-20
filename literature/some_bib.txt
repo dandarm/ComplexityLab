@@ -1,0 +1,74 @@
+@article{nerini2017anonstationarystochastic,
+    author = "Nerini, Daniele and Besic, Nikola and Sideris, Ioannis and Germann, Urs and Foresti, Loris",
+    title = "A non-stationary stochastic ensemble generator for radar rainfall fields based on the Short-Space Fourier Transform",
+    year = "2017",
+    journal = "Hydrology and Earth System Sciences",
+    volume = "21",
+    pages = "2777-2797",
+    month = "Jun",
+    doi = "10.5194/hess-21-2777-2017",
+    url = "https://doi.org/10.5194/hess-21-2777-2017",
+    publisher = "Copernicus GmbH",
+    issue = "6",
+    issn = "1607-7938"
+}
+
+
+@article{kunwar2017productionofcryogens,
+    author = "Kunwar, S",
+    title = "Production of cryogens using wind energy for use in deep mine cooling and ventilation.",
+    year = "2017",
+    journal = "Unknown journal"
+}
+
+
+@article{boaretto2021discriminatingchaoticand,
+    author = "Boaretto, B. R. R. and Budzinski, R. C. and Rossi, K. L. and Prado, T. L. and Lopes, S. R. and Masoller, C.",
+    title = "Discriminating chaotic and stochastic time series using permutation entropy and artificial neural networks",
+    year = "2021",
+    journal = "Scientific Reports",
+    volume = "11",
+    month = "Jul",
+    doi = "10.48550/arxiv.2107.02860",
+    url = "https://doi.org/10.48550/arxiv.2107.02860",
+    publisher = "arXiv"
+}
+
+
+@article{mossad2024assessingatmosphericgravity,
+    author = "Mossad, Mohamed and Strelnikova, Irina and Wing, Robin and Baumgarten, Gerd",
+    title = "Assessing atmospheric gravity wave spectra in the presence of observational gaps",
+    year = "2024",
+    journal = "Atmospheric Measurement Techniques",
+    month = "Jan",
+    doi = "10.5194/amt-17-783-2024",
+    url = "https://doi.org/10.5194/amt-17-783-2024",
+    publisher = "Copernicus GmbH"
+}
+
+
+@article{tusoni2025robustcausaldiscovery,
+    author = "Tusoni, Matteo and Masi, Giuseppe and Coletta, Andrea and Glielmo, Aldo and Arrigoni, Viviana and Bartolini, N.",
+    title = "Robust Causal Discovery in Real-World Time Series with Power-Laws",
+    year = "2025",
+    journal = "ArXiv",
+    volume = "abs/2507.12257",
+    month = "Jul",
+    doi = "10.48550/arxiv.2507.12257",
+    url = "https://doi.org/10.48550/arxiv.2507.12257"
+}
+
+
+@article{bahrpeyma2021amethodologyfor,
+    author = "Bahrpeyma, Fouad and Roantree, Mark and Cappellari, Paolo and Scriney, Michael and McCarren, Andrew",
+    title = "A Methodology for Validating Diversity in Synthetic Time Series Generation",
+    year = "2021",
+    journal = "MethodsX",
+    volume = "8",
+    pages = "101459",
+    month = "Jul",
+    doi = "10.1016/j.mex.2021.101459",
+    url = "https://doi.org/10.1016/j.mex.2021.101459",
+    publisher = "Elsevier BV",
+    issn = "2215-0161"
+}

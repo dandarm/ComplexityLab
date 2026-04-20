@@ -1,0 +1,1 @@
+Search for Time Series as sum of sinusoidal terms with power law distribution of frequency and amplitudes, used as benchmark for Time Series forecast models
